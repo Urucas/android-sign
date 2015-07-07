@@ -1,0 +1,30 @@
+{
+  "name": "android-sign",
+  "version": "0.0.0",
+  "description": "Signing Android application from nodejs",
+  "main": "node/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Urucas/android-sign.git"
+  },
+  "keywords": [
+    "android",
+    "jarsigner",
+    "zipaling",
+    "sign",
+    "key",
+    "keytool"
+  ],
+  "author": "Urucas <hello@urucas.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Urucas/android-sign/issues"
+  },
+  "homepage": "https://github.com/Urucas/android-sign",
+  "dependencies": {
+    "babel": "^5.6.14"
+  }
+}
