@@ -1,0 +1,35 @@
+#!/usr/bin/env node
+var argv = require('optimist')
+  .usage()
+  .options('apk', {
+    describe: 'Path to Apk to sign'
+  })
+  .options('signkey', {
+    describe: 'Path to Signkey'
+  })
+  .options('password', {
+    describe: 'Signkey password'
+  })
+  .options('alias', {
+    describe: 'Application alias'
+  })
+  .options('output', {
+    describe: 'Path to output signed apk'
+  })
+  .options('verbose', {
+    default : true,
+    describe : "Spit output"
+  })
+  .argv;
+
+if(argv.help) {
+  console.log([
+    'android-sign module',
+    'Usage: android-sign --apk [path_to_apk] --signkey [path_to_signkey] --password [signkey password] --alias [app alias] --output [path_to_output_signed_apk]'
+  ].join('\n'))
+  return;
+}
+
+var sign = require('../node');
+var err = sign(argv);
+console.log(err);
