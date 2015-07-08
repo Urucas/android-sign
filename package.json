@@ -8,6 +8,9 @@
     "prestart": "make clean && make node",
     "start": "./bin/index"
   },
+  "bin": {
+    "android-sign": "./bin/index"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Urucas/android-sign.git"
